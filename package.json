@@ -9,6 +9,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.5",
+    "husky": "^5.1.1",
     "nodemon": "^2.0.7",
     "sucrase": "^3.17.1"
   },
@@ -20,7 +21,8 @@
     "build": "sucrase ./src -d ./dist --transforms imports --exclude-dirs tests",
     "start": "nodemon src/index.js",
     "serve": "node dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "husky install"
   },
   "jest": {
     "transform": {
