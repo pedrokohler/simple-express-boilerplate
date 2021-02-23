@@ -1,5 +1,5 @@
-import sum from '../function';
+import sum from "../function";
 
-it('Should work', () => {
+it("Should work", () => {
   expect(sum(1, 3)).toBe(4);
 });
